@@ -1,0 +1,12 @@
+<!-- Let's say that you want to control whether or not a CSS class 
+is applied to a given element. -->
+<!-- Here, we're saying that the CSS class of .gray should only be attached to the h1 element 
+if the property h1Style results to true. 
+Let's define that in the home.component.ts file: -->
+<h1 [ngClass]="{
+  'gray': h1Style,
+  'large': !h1Style
+}">Home</h1>
+<!-- You define an event binding by wrapping the event between (), and calling a method. 
+You define the method in the home.component.ts file -->
+<button (click)=firstClick()>Click me</button>
